@@ -1,0 +1,83 @@
+@charset 'utf-8';
+
+/*Hack for ie6-*/
+* html body #wrap section #list-view {
+	background: #43C9FD;
+}
+/*Hack for ie7-*/
+html body #wrap section #position, {
+	display: none;
+}
+/*Hack for ie7-*/
+body #wrap section #list-view, {
+	width: 80%;
+	margin: 0 auto;
+}
+body #wrap header #navigation-bar {
+	zoom: 1;
+	filter: progid:DXImageTransform.Microsoft.Shadow(Color='#cccccc', Strength=10, Direction=180);
+}
+body #wrap section #list-view .ani-list {
+	width: 100%!ie; /*Hack For ie7-*/
+	margin: auto;
+}
+body #wrap section #list-view .ani-list li { 
+	height: 100px;
+	padding: 0;
+	padding-top: 20px;
+	margin: 0!ie; /*Hack For ie7-*/
+	filter: progid:DXImageTransform.Microsoft.Shadow(Color='#13A7C7', Strength=4, Direction=0),
+			progid:DXImageTransform.Microsoft.Shadow(Color='#13A7C7', Strength=4, Direction=90),
+			progid:DXImageTransform.Microsoft.Shadow(Color='#13A7C7', Strength=4, Direction=180),
+			progid:DXImageTransform.Microsoft.Shadow(Color='#13A7C7', Strength=4, Direction=270);
+}
+@media screen\9 { /*Hack for ie7-*/
+	body #wrap section #list-view .ani-list li .on-air-time {
+		float: left;
+		clear: left;
+		display: block;
+	}
+	body #wrap section #list-view .ani-list li .ani-title {
+		float: left;
+		clear: left;
+		display: block;
+	}
+
+	body #wrap section #list-view .swipe-wrap .ani-list li .on-air-time .hour, { /*only in ie7-*/
+		margin-right: 10px;
+	}
+
+	body #wrap section #list-view .ani-list li  .category {
+		float: left;
+		clear: left;
+		display: block;
+	}
+	body #wrap section #list-view {
+		zoom: 1;
+	}
+	body #wrap section #list-view .swipe-wrap .ani-list li.day:before {
+		margin: 0;
+		padding: 0;
+		content: '';
+	}
+	body #wrap section #list-view .swipe-wrap .ani-list li.day:after {
+		content: '';
+		margin: 0;
+		padding: 0;
+	}
+	body #wrap section #list-view .swipe-wrap .ani-list li .on-air-time:before {
+		content: '';
+		color: #686868;
+		margin: 0;
+	}
+	body #wrap section #list-view .swipe-wrap .ani-list li .ani-title:before {
+		content: '';
+		color: #686868;
+		margin: 50px;
+	}
+	body #wrap section #list-view .swipe-wrap .ani-list li .category:before {
+		content: '';
+		color: #686868;
+		margin: 0px;
+	}
+}

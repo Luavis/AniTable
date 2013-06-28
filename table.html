@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<!--[if lt IE8]
+<html>
+<[endif]-->
+<!--[if !IE]>-->
+<html lang="ko">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title>편성표</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<!--General HTML Meta-->
+	<meta name="title" content="애니메이션 편성표">
+	<meta name="description" content="방영중인 애니메이션 편성표입니다.">
+	<meta name="author" content="Luavis">
+	<meta name="copyright" content="Luavis">
+	<meta name="keyword" content="애니메이션, 편성표, animation">
+	<!--OpenGraph Meta-->
+	<meta name="og:title" content="애니메이션 편성표">
+	<meta name="og:description" content="방영중인 애니메이션 편성표입니다.">
+	<meta name="og:url" content="http://luavis.kr/table">
+	<!--Dublin Core Meta-->
+	<meta name="DC.title" content="애니메이션 편성표">
+	<meta name="DC.Subject" content="애니메이션">
+	<meta name="DC.description" content="방영중인 애니메이션 편성표입니다.">
+	<meta name="DC.Creator" content="Luavis">
+
+	<meta name="Content-Script-Type" content="text/javascirpt">
+	<meta name="Content-Script-Type" content="text/css">
+	<meta name="HandhelFriendly" content="true">
+	<meta name="MobileOptimized" content="320">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" 
+		content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no">
+
+	<meta name="google" content="notranslate">
+	<link rel="shortcut icon" type="image/x-icon" href="./image/icon.ico">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="./image/icon.ico">
+	<link rel="apple-touch-icon" href="./image/icon.png">
+	<meta name="format-detection" content="telephone=no, address=no, email=no" />
+	<meta name="cleartype" content="on">
+	<link rel="stylesheet" media="all" href="./stylesheet/default.css">	
+	<link rel="stylesheet" media="all" href="./stylesheet/developer.css">
+	<script src="./script/version.js"></script>
+	<!--[if lt IE 9]>
+	<script src="./script/html5shiv.js"></script>
+	<link rel="stylesheet" media="all" href="./stylesheet/default-ie.css">
+	<![endif] -->
+	<link rel="stylesheet/less" media="all" href="./stylesheet/default.less">	
+	<script src="./script/less.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<div id="navigation-bar">
+				<div id="navigation-title">편성표</div>
+			</div>
+		</header>
+		<section>
+			<div id="position">
+				<ul>
+				</ul>
+			</div>
+			<div id="list-view" class="swipe">
+				<div class='swipe-wrap'>
+					<div>
+						<ul class="ani-list">
+							<li class="day text-center"><span>월</span></li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">01</span><span class="min">05</span>
+								</div>
+								<div class="ani-title">
+									기어와라! 냐루코양 W
+								</div>
+								<div class="category">
+									코미디
+								</div>
+								<div>
+									<ul class="subtitle-links">
+										<li><a href="http://nysjisi.tistory.com/422">영산_映傘</a></li>
+										<li><a href="http://kwangwaul.egloos.com/5751469">여니</a></li>
+										<li><a href="http://mglna.tistory.com/234">천상</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">18</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									무시부교
+								</div>
+								<div class="category">
+									액션/판타지
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://guestbook.blog.naver.com/neverduck1">네덕찡</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">18</span><span class="min">20</span>
+								</div>
+								<div class="ani-title">
+									치비☆데비!
+								</div>
+								<div class="category">
+									아동/판타지
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="#">자막제작자가 없습니다.</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">21</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									미야카와가의 공복
+								</div>
+								<div class="category">
+									코미디
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://guestbook.blog.naver.com/neverduck1">불량기념물</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="ani-list">
+							<li class="day text-center"><span>화</span></li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">01</span><span class="min">35</span>
+								</div>
+								<div class="ani-title">
+									하야테처럼! Cuties
+								</div>
+								<div class="category">
+									코미디/학원물
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://anisang.tistory.com/768">sang</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">02</span><span class="min">05</span>
+								</div>
+								<div class="ani-title">
+									아라타 칸가타리~혁신이~
+								</div>
+								<div class="category">
+									판타지
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://hukebine.tistory.com/category/%EC%A7%84%ED%96%89%EC%9E%90%EB%A7%89/%EC%95%84%EB%9D%BC%ED%83%80%EC%B9%B8%EA%B0%80%ED%83%80%EB%A6%AC">바보개</a></li>
+										<li><a href="http://doublerian.tistory.com/1076">리안</a></li>
+										<li><a href="http://skyume.tistory.com/">BlueEyes</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">07</span><span class="min">30</span>
+								</div>
+								<div class="ani-title">
+									마이리틀 포니~친구는 마법
+								</div>
+								<div class="category">
+									아동/판타지
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="#">자막제작자가 없습니다.</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">17</span><span class="min">30</span>
+								</div>
+								<div class="ani-title">
+									트레인 히어로
+								</div>
+								<div class="category">
+									/
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="#">자막제작자가 없습니다.</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">18</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									초속변형 자이로제터
+								</div>
+								<div class="category">
+									어드벤처/판타지
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://asterix.tistory.com/category/%EC%B4%88%EC%86%8D%EB%B3%80%ED%98%95%20%EC%9E%90%EC%9D%B4%EB%A1%9C%EC%A0%9C%ED%84%B0">feder07</a></li>
+										<li><a href="http://cobb333.blog.me/20177748031">THE빅오</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">20</span><span class="min">25</span>
+								</div>
+								<div class="ani-title">
+									스파로우즈 호텔
+								</div>
+								<div class="category">
+									코미디
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li>자막제작자가 없습니다.</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="ani-list">
+							<li class="day text-center"><span>수</span></li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">00</span><span class="min">35</span>
+								</div>
+								<div class="ani-title">
+									유유시키
+								</div>
+								<div class="category">
+									일상
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="#">불량기념물</a></li>
+										<li><a href="#">타마</a></li>
+										<li><a href="#">코야레인</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">01</span><span class="min">35</span>
+								</div>
+								<div class="ani-title">
+									아이우라
+								</div>
+								<div class="category">
+									일상
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="#">불량기념물</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">18</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									짐승배틀 몬스노
+								</div>
+								<div class="category">
+									어드벤처/액션
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li>자막제작자가 없습니다.</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">18</span><span class="min">20</span>
+								</div>
+								<div class="ani-title">
+									흑마녀가 나가신다!!
+								</div>
+								<div class="category">
+									판타지/코미디
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li>자막제작자가 없습니다.</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">19</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									이나즈마 일레븐 GO 갤럭시
+								</div>
+								<div class="category">
+									스포츠
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li>자막제작자가 없습니다.</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">19</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									골판지전기 WARS
+								</div>
+								<div class="category">
+									메카닉/학원물
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="#">오브나</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="ani-list">
+							<li class="day text-center"><span>목</span></li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">00</span><span class="min">30</span>
+								</div>
+								<div class="ani-title">
+									단재분리의 크라임엣지
+								</div>
+								<div class="category">
+									액션/판타지
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="#">Angel</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">01</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									RDG 레드 데이터 걸
+								</div>
+								<div class="category">
+									드라마
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://kwangwaul.egloos.com/5748257">여니</a></li>
+										<li><a href="http://tamatanrain.wo.tc/">코야레니</a></li>
+										<li><a href="http://skyume.tistory.com/">BlueEyes</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">01</span><span class="min">40</span>
+								</div>
+								<div class="ani-title">
+									gdgd 페어리즈 2기
+								</div>
+								<div class="category">
+									코미디
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://raharu.tistory.com/283">HARU</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">02</span><span class="min">05</span>
+								</div>
+								<div class="ani-title">
+									노래의☆왕자님♪ 진심LOVE2000%
+								</div>
+								<div class="category">
+									순정/아이돌
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://clomiate1.oa.to/tag/utapri2">크로미트</a></li>
+										<li><a href="http://hanalen.egloos.com/category/%E3%80%80%EB%85%B8%EB%9E%98%ED%95%98%EB%8A%94%E2%98%86%EC%99%95%EC%9E%90%EB%8B%982%EA%B8%B0">하날엔</a></li>
+										<li><a href="http://zulet.wo.tc/">쭈렛</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">02</span><span class="min">48</span>
+								</div>
+								<div class="ani-title">
+									카니발
+								</div>
+								<div class="category">
+									판타지/액션
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://hukebine.tistory.com/category/%EC%A7%84%ED%96%89%EC%9E%90%EB%A7%89/%EC%B9%B4%EB%8B%88%EB%B0%9C">바보개</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">18</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									아이카츠!
+								</div>
+								<div class="category">
+									드라마
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://asterix.tistory.com/category/%EC%95%84%EC%9D%B4%EC%B9%B4%EC%B8%A0!">feder07</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">19</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									포켓몬스터 베스트위시 시즌2
+								</div>
+								<div class="category">
+									액션/판타지
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://doublerian.tistory.com/1074">리안</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">19</span><span class="min">30</span>
+								</div>
+								<div class="ani-title">
+									나루토 질풍전
+								</div>
+								<div class="category">
+									액션/학원물
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://blog.naver.com/colortnk/130136544145">시로유키</a></li>
+										<li><a href="http://alicen.tistory.com/category/%EC%A7%84%ED%96%89%20%EC%9E%90%EB%A7%89/%EB%82%98%EB%A3%A8%ED%86%A0%20%EC%A7%88%ED%92%8D%EC%A0%84">엘리슨</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">02</span><span class="min">48</span>
+								</div>
+								<div class="ani-title">
+									카니발
+								</div>
+								<div class="category">
+									판타지/액션
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://hukebine.tistory.com/category/%EC%A7%84%ED%96%89%EC%9E%90%EB%A7%89/%EC%B9%B4%EB%8B%88%EB%B0%9C">바보개</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">22</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									알바 뛰는 마왕님!
+								</div>
+								<div class="category">
+									판타지/드라만
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://mglna.tistory.com/235">천상</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">22</span><span class="min">30</span>
+								</div>
+								<div class="ani-title">
+									은하기공대 마제스틱 프린스
+								</div>
+								<div class="category">
+									판타지/드라만
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://prisis.tistory.com/381">프리시스</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="ani-list">
+							<li class="day text-center"><span>금</span></li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">12</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									역시 내 청춘 러브 코미디는 잘못됐다
+								</div>
+								<div class="category">
+									코미디/학원물
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://bullyangblog.tistory.com/180">불량기념물</a></li>
+										<li><a href="http://133eevee.blog.me/">메카라빔</a></li>
+										<li><a href="http://blog.naver.com/recog_/110170075219">Kyou</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">01</span><span class="min">35</span>
+								</div>
+								<div class="ani-title">
+									혁명기 발브레이브
+								</div>
+								<div class="category">
+									SF/메카닉
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://prisis.tistory.com/382">프리시스</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">02</span><span class="min">05</span>
+								</div>
+								<div class="ani-title">
+									DEVIL SURVIVOR 2 the ANIMATION
+								</div>
+								<div class="category">
+									SF/학원물
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://asterix.tistory.com/category/DS2A">ferder</a></li>
+										<li><a href="http://yarnzero.tistory.com/">얀제로</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">04</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									이니셜D 5th Stage
+								</div>
+								<div class="category">
+									레이싱/드라마
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://blog.naver.com/woo199501">Sauber F1</a></li>
+										<li><a href="http://r-kai.wo.tc/">Alvarez</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">19</span><span class="min">30</span>
+								</div>
+								<div class="ani-title">
+									크레용 신짱
+								</div>
+								<div class="category">
+									Lorem/ipsum
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="#">자막제작자가 없습니다.</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">22</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									악의 꽃
+								</div>
+								<div class="category">
+									드라마
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://blog.naver.com/as2ar1/10170500904">앗사리</a></li>
+										<li><a href="http://blog.naver.com/woo199501">Sauber F1</a></li>
+										<li><a href="http://skyume.tistory.com/">BlueEyes</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">22</span><span class="min">30</span>
+								</div>
+								<div class="ani-title">
+									백화요란 사무라이 브라이드
+								</div>
+								<div class="category">
+									미소녀/액션
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://hukebine.tistory.com/category/%EC%A7%84%ED%96%89%EC%9E%90%EB%A7%89/%EB%B0%B1%ED%99%94%EC%9A%94%EB%9E%80%EC%82%AC%EB%AC%B4%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9D%BC%EC%9D%B4%EB%93%9C">바보개</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">22</span><span class="min">30</span>
+								</div>
+								<div class="ani-title">
+									어떤 과학의 초전자포 S
+								</div>
+								<div class="category">
+									판타지/액션
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://ruko606.egloos.com/1915560">루코</a></li>
+										<li><a href="http://bullyangblog.tistory.com/181">불량기념물</a></li>
+										<li><a href="http://melody88.tistory.com/526">Melody</a></li>
+										<li><a href="http://o0sh05120o.egloos.com/">하케라노</a></li>
+										<li><a href="http://fuko.tistory.com/category/-%20%EC%A7%84%ED%96%89%EC%9E%90%EB%A7%89%20-/%EC%96%B4%EB%96%A4%20%EA%B3%BC%ED%95%99%EC%9D%98%20%EC%B4%88%EC%A0%84%EC%9E%90%ED%8F%ACS">stankovic</a></li>
+										<li><a href="http://jevolution.tistory.com/78">제볼루션</a></li>
+										<li><a href="http://blog.naver.com/colortnk/130166181968">시로유키</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="ani-list">
+							<li class="day text-center"><span>토</span></li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">01</span><span class="min">30</span>
+								</div>
+								<div class="ani-title">
+									데이트 어 라이브
+								</div>
+								<div class="category">
+									판타지/액션
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://blog.naver.com/3hope3/70169753022">해탈한 세르</a></li>
+										<li><a href="http://ch7000000.blog.me/189349931">무서운 닭</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">01</span><span class="min">53</span>
+								</div>
+								<div class="ani-title">
+									치하야후루 2기
+								</div>
+								<div class="category">
+									스포츠
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://ll_orz.blog.me/70169675817">스피넬</a></li>
+										<li><a href="http://raharu.tistory.com/267">HARU</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">04</span><span class="min">52</span>
+								</div>
+								<div class="ani-title">
+									철인 28호 가오!
+								</div>
+								<div class="category">
+									SF/어드벤처
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="#">자막제작자가 없습니다.</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">09</span><span class="min">30</span>
+								</div>
+								<div class="ani-title">
+									쥬얼펫 해피니스
+								</div>
+								<div class="category">
+									마법소녀/판타지
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="#">자막제작자가 없습니다.</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">10</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									프리티 리듬 레인보우 라이브
+								</div>
+								<div class="category">
+									드라마
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://blog.naver.com/primflea">프림플레아</a></li>
+										<li><a href="http://tamatanrain.wo.tc/">코야레인</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">10</span><span class="min">30</span>
+								</div>
+								<div class="ani-title">
+									탐험 드리랜드 ~1000년의 진실~
+								</div>
+								<div class="category">
+									어드벤쳐
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://blog.naver.com/wsadzxc/10170403327">제볼루션</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">17</span><span class="min">30</span>
+								</div>
+								<div class="ani-title">
+									우주형제
+								</div>
+								<div class="category">
+									SF/드라마
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://blog.naver.com/harne_/90175180226">하느</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">17</span><span class="min">55</span>
+								</div>
+								<div class="ani-title">
+									하이타이 나나파 2기
+								</div>
+								<div class="category">
+									판타지/코미디
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="#">자막제작자가 없습니다.</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">18</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									명탐정 코난
+								</div>
+								<div class="category">
+									미스터리
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://blog.naver.com/primflea">백지</a></li>
+										<li><a href="http://blog.naver.com/baby1255/40173487784">파Oi</a></li>
+										<li><a href="http://r_data.blog.me/140143317776">에도코</a></li>
+										<li><a href="http://blog.naver.com/ripper450">108</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">22</span><span class="min">30</span>
+								</div>
+								<div class="ani-title">
+									변태왕자와 웃지 않는 고양이
+								</div>
+								<div class="category">
+									코미디 / 판타지
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://bullyangblog.tistory.com/182">불량기념물</a></li>
+										<li><a href="http://blog.naver.com/iod83">해골</a></li>
+										<li><a href="http://zetice.egloos.com/">zetice</a></li>
+										<li><a href="http://wer313.tistory.com/category/%EB%B3%80%ED%83%9C%EC%99%95%EC%9E%90%EC%99%80%20%EC%9B%83%EC%A7%80%20%EC%95%8A%EB%8A%94%20%EA%B3%A0%EC%96%91%EC%9D%B4">타마</a></li>
+										<li><a href="http://blog.naver.com/neverduck1/130169373598">네덕찡</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">23</span><span class="min">45</span>
+								</div>
+								<div class="ani-title">
+									킹덤 2
+								</div>
+								<div class="category">
+									/
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="#">자막제작자가 없습니다.</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="ani-list">
+							<li class="day text-center"><span>일</span></li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">00</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									내 여동생이 이렇게 귀여울 리가 없어 2기
+								</div>
+								<div class="category">
+									학원물/드라마
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://melody88.tistory.com/528">Melody</a></li>
+										<li><a href="http://r-kai.wo.tc/">Alvarez</a></li>
+										<li><a href="http://blog.naver.com/gkgk6265/140191253980">LN 타치바나</a></li>
+										<li><a href="http://kimsp1994.blog.me/">주차신</a></li>
+										<li><a href="http://seoriring.wo.tc/">서리</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">01</span><span class="min">00</span>
+								</div>
+								<div class="ani-title">
+									부르잖아요. 에자젤씨
+								</div>
+								<div class="category">
+									코미디
+								</div>
+								<div class="subtitles">
+									<ul class="subtitle-links">
+										<li><a href="http://melody88.tistory.com/528">Melody</a></li>
+										<li><a href="http://r-kai.wo.tc/">Alvarez</a></li>
+										<li><a href="http://blog.naver.com/gkgk6265/140191253980">LN 타치바나</a></li>
+										<li><a href="http://kimsp1994.blog.me/">주차신</a></li>
+										<li><a href="http://seoriring.wo.tc/">서리</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="on-air-time">
+									<span class="hour">01</span><span class="min">58</span>
+								</div>
+								<div class="ani-title">
+									진격의 거인
+								</div>
+								<div class="category">
+									판타지/액션
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<a href="./developer.html">Developed by Luavis</a><br/>
+			<a href="./developer2.html">Supported by Smile.Crying</a>
+		</footer>
+	</div>
+	<!-- if not ie 8 or below it will load
+	<script src="./script/swipe.js"></script>-->
+	<script src="./script/application.js"></script>
+</body>
+</html>

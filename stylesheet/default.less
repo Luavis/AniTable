@@ -1,0 +1,324 @@
+@charset 'utf-8';
+@cool-blue: #13A7C7;
+@cool-blue-dark: #1399bd;
+@cool-blue-white: #43C9FD;
+@cool-blue-whitest: #53D9FF;
+@black: #111;
+@gray: #a8a8a8;
+@gray-darker: #686868;
+@black-bright: #3f3f3f;
+
+@three-col-mode: 600px;
+@font-small-mode: 720px;
+// Google font cdn
+// @import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+// @import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+// @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+// @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+// @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+// * {
+// -moz-box-sizing: border-box;
+// -webkit-box-sizing: border-box;
+// box-sizing: border-box;
+// -webkit-tap-highlight-color: rgba(0,0,0,0);
+// -webkit-text-size-adjust: none;
+// -webkit-touch-callout: none;
+// }
+
+@font-face {
+	font-family: '나눔고딕';
+	src:
+	local('나눔고딕'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff2) format('woff2'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff) format('woff'),
+	url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.ttf) format('truetype');
+	font-smooth:always;
+	-webkit-font-smoothing: antialiased;
+}
+@keyframes shadowAndOpacity {
+	from {
+		text-shadow: 0 0 0px #FFF;
+		opacity: 0.3;
+	}
+	to {
+		text-shadow: 0 0 6px #FFF;
+		opacity: 1.0;
+	}
+}
+@-webkit-keyframes shadowAndOpacity {
+	from {
+		text-shadow: 0 0 0px #FFF;
+		opacity: 0.3;
+	}
+	to {
+		text-shadow: 0 0 6px #FFF;
+		opacity: 1.0;
+	}
+}
+@keyframes list-expand
+{
+	from {height: 60px;}
+	to {height: 180px;}
+}
+@-webkit-keyframes list-expand /* Safari and Chrome */
+{
+	from {height: 60px;}
+	to {height: 180px;}
+}
+@keyframes list-contract
+{
+	from {height: 180px;}
+	to {height: 60px;}
+}
+@-webkit-keyframes list-contract /* Safari and Chrome */
+{
+	from {height: 180px;}
+	to {height: 60px;}
+}
+// setting font
+body, input, textarea, select, button, table {
+	font-family: '나눔고딕', '돋음', Dotum,sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+::selection {
+	background-color: rgb(19,167,199);
+	background-color: rgba(19,167,199,0.5);
+}
+//Hacks
+html > body #wrap section #list-view .swipe-wrap .ani-list {
+	width: 80%; /*Hack! Not Active Only at IE6*/
+}
+//html > /**/ body #wrap section #list-view .swipe-wrap .ani-list li {padding: 10px 10px 0px 10px;}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: white;
+	color: @black;	
+	background-image: url(../image/images.background.pattern.gif);
+	background-repeat: repeat;
+	.left         { float: left !important; }
+	.right        { float: right !important; }
+	.text-left    { text-align: left !important; }
+	.text-right   { text-align: right !important; }
+	.text-center  { text-align: center !important; }
+	.text-justify { text-align: justify !important; }
+	.hide         { display: none; }
+	.box-sizing (@type: border-box) {
+		-webkit-box-sizing: @type;
+		-moz-box-sizing: @type;
+		box-sizing: @type;
+	}
+
+	.border-radius(@radius: 0px) {
+		-webkit-border-radius: @radius;
+		border-radius: @radius;
+		behavior: url(/table2/pie/PIE.htc);
+	}
+
+	#wrap {
+		header {
+			#navigation-bar {
+				@navigation-height: 48px;
+				height: @navigation-height;
+				color: white;
+				background: @black;
+				padding-top: @navigation-height - 38px;
+				border-bottom: 2px @cool-blue-dark solid;
+				
+				-webkit-box-shadow:  0px 0px 10px 3px rgba(0, 0, 0, 1.0);
+				-moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 1.0);
+				box-shadow:  0px 0px 10px 3px rgba(0, 0, 0, 1.0);
+
+				.box-sizing;				
+				#navigation-title {
+					width: 100%;
+					text-align: center;
+					font-weight: bold;
+					font-size: 25px;
+					text-shadow: 0 0 6px #FFF;
+					opacity: 1.0;
+					-webkit-animation: shadowAndOpacity 1s ease-in 1;
+					animation: shadowAndOpacity 1s ease-in 1;
+				}
+			}
+		}
+		section {
+			margin: 20px auto 0 auto;
+			width: 100;
+			#list-view {
+				margin-bottom: 25px;
+				.swipe-wrap {
+					.ani-list {
+						-webkit-box-shadow: 0px 0px 10px 2px #13A7C7;
+						box-shadow: 0px 0px 10px 2px #13A7C7;
+						position: relative;
+						margin: 12px auto;
+						list-style: none;
+						padding: 0;
+						li {
+							cursor: pointer;
+							background: @cool-blue-white;
+							border-bottom: 2px @cool-blue-dark solid;
+							height: 60px;
+							padding: 10px 10px 0px 10px;
+							@media only screen and (max-width: 1000px) {
+								height: 65px;
+							}
+							@media only screen and (max-width: @three-col-mode) {
+								height: 75px;
+							}
+							.box-sizing;
+							font-size: 16px;
+							@media only screen and (max-width: @font-small-mode) {
+								font-size: 13px;
+							}
+							&.day {
+								cursor: auto;
+								background: @cool-blue-whitest;
+								color: black;
+								font-weight: bold;
+								height: 60px;
+								padding-top: 15px;
+								font-weight: bold;
+								font-size: 18px;
+								&:before {
+									content: '<';
+									color: @gray;
+								}
+								&:after {
+									content: '>';
+									color: @gray;
+								}
+							}
+							&.contract {
+								animation: list-contract 0.5s;
+								-webkit-animation: list-contract 0.5s;
+							}
+							&.selected {
+								animation: list-expand 0.5s;
+								-webkit-animation: list-expand 0.5s;
+								height: 180px;
+								.subtitle-links {
+									display: block;
+								}
+							}
+							&:last-child {
+								border-bottom:none;
+							}
+							.subtitle-links {
+								display: none;
+								list-style: none;
+								margin-top: 20px;
+								padding: 0;
+								text-align: center;
+								li {
+									height: 30px;
+									padding: 0;
+									margin: 0;
+									border-bottom: none;
+									a{
+										 text-decoration: none;
+										 color: @black;
+									}
+								}
+							}
+							.on-air-time {
+								display: inline-block;
+								@media only screen and (max-width: @three-col-mode) {
+									display: block;
+								}
+								&:before {
+									content: '시간 |';
+									color: @gray-darker;
+									margin: 0 10px;
+								}
+								.hour {
+									&:after {
+										content : ' : ';
+									}
+								}
+							}
+							.ani-title {
+								display: inline-block;
+								@media only screen and (max-width: @three-col-mode) {
+									display: block;
+									margin-top: 3px;
+								}
+
+								&:before {
+									content: '제목 |';
+									color: @gray-darker;
+									margin: 0 10px 0 25px;
+									@media only screen and (max-width: @three-col-mode) {
+										margin-left: 10px;
+									}
+								}
+							}
+
+							.category {
+								display: inline-block;
+								float: right;
+								@media only screen and (max-width: 1000px) {
+									float: left;
+									float: inherit;
+									display: block;
+									margin-top: 3px;
+								}
+
+								&:before {
+									content: '장르 |';
+									color: @gray-darker;
+									margin: 0 10px;
+								}
+							}
+						}
+					}
+				}
+			}
+			#position {
+				ul {
+					text-align: center;
+					margin: 0 0 20px 0;
+					padding: 0;
+					list-style-type: none;
+					li {
+						padding: 0px;
+						margin: 0px;
+						-webkit-transition: all .2s ease-in;
+						transition: all .5s ease-in;
+						display: inline-block;
+						width: 10px;
+						height: 10px;
+						.border-radius (10px);
+						background: #FFF;
+						-webkit-box-shadow: 0 0 0px 1px @cool-blue;
+						box-shadow: inset 0 1px 2px #fefefe,0 0 1px 1px @cool-blue;
+						margin: 0 2px;
+						cursor: pointer;
+					}
+					li.on {
+						background: @cool-blue;
+						-webkit-box-shadow: 0 0 0px 1px @cool-blue;
+						box-shadow: 0 0px 0px 1px @cool-blue-whitest, 0 0 0px 1px @cool-blue;
+					}
+				}
+			}
+		}
+		footer {
+			text-align: center;
+			color: @gray;
+			font-size: 13px;
+			margin-bottom: 10px;
+			text-shadow: 0 0 6px #BBB;
+			a {
+				color: @black;
+				text-decoration: none;
+			}
+		}
+	}
+}
